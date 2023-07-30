@@ -3,8 +3,6 @@ __all__ = ['save_access_level']
 import json
 import os
 
-from pa08.ex1 import file3_to_json
-
 
 def save_access_level(name: str, personal_id: str, access_level: int, file_name: str) -> bool:
     if os.path.exists(file_name):

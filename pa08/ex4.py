@@ -3,8 +3,6 @@ __all__ = ["csv_modifier"]
 import csv
 import json
 
-from pa08.ex2 import save_access_level
-
 
 def csv_modifier(file_name: str, new_file_name: str):
     result = []

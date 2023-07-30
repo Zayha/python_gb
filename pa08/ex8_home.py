@@ -1,4 +1,5 @@
 __all__ = ['get_directory_size', 'what_is_that', 'dir_walker', 'pickle']
+
 import csv
 import json
 import os
@@ -9,7 +10,6 @@ from pathlib import Path
 def get_directory_size(directory: str) -> int:
     total_size = 0
     for dir_path, dir_names, file_names in os.walk(directory):
-        # print(dir_path, dir_names, file_names)
         for filename in file_names:
             filepath = os.path.join(dir_path, filename)
             total_size += os.path.getsize(filepath)
@@ -70,11 +70,7 @@ def dir_walker_to_files(directory_path: str, file_name: str):
             csv_writer.writerow(data_lst)
 
 
-
 def main():
-    # print(get_directory_size('json_for_test'))
-    # print(what_is_that('json_for_test'))
-    # print(dir_walker('json_for_test'), sep='\n')
     dir_walker_to_files('json_for_test', 'dl')
 
 

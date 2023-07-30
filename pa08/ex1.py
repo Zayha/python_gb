@@ -2,8 +2,6 @@ __all__ = ['file3_to_json']
 
 import json
 
-from pa07 import create_new_file_ex3, pseudo_name, add_num
-
 
 def file3_to_json(file_inp: str, file_out: str):
     with (
@@ -15,10 +13,6 @@ def file3_to_json(file_inp: str, file_out: str):
 
 
 def main():
-    # add_num('file1.txt', 50)
-    # for _ in range(60):
-    #     pseudo_name()
-    # create_new_file_ex3('ex2_out.txt', 'file1.txt', 'out.txt')
     file3_to_json('out.txt', 'out.json')
 
 
