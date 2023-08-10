@@ -1,5 +1,11 @@
 class Rectangle:
+    """
+    Класс для обработки прямоугольников
+    """
     def __init__(self, *args, **kwargs):
+        """
+        :param args: принимает 2 параметра ширину и высоту или 1 если это квадрат
+        """
         if len(args) == 1:
             self.length = args[0]
             self.width = args[0]
