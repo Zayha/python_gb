@@ -66,6 +66,11 @@ class Matrix:
 
     @staticmethod
     def is_valid_matrix(matrix: list) -> bool:
+        """
+        Проверка валидноси размера матрицы
+        :param matrix: принимает на вход матрицу в виде списка со сложенными списками
+        :return: возвращает True если проверка пройдена или False, если нет.
+        """
         if not matrix:
             return False
 
