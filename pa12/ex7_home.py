@@ -43,7 +43,22 @@ class Student:
     def __str__(self):
         return f'ФИО: {self.first_name}\t{self.patronymic}\t{self.last_name}\n' \
                f'Предметы: {", ".join(self._subject_taught.keys())}\n' \
-               f'Средний балл: {self.average_grade_score[-4:]}'
+               f'Средний балл: {self.average_grade_score[1]:.2f}'
+
+    def __eq__(self, other):
+        return self.average_grade_score == other.average_grade_score
+
+    def __lt__(self, other):
+        return self.average_grade_score < other.average_grade_score
+
+    def __le__(self, other):
+        return self.average_grade_score <= other.average_grade_score
+
+    def __gt__(self, other):
+        return self.average_grade_score > other.average_grade_score
+
+    def __ge__(self, other):
+        return self.average_grade_score >= other.average_grade_score
 
     @staticmethod
     def _read_csv(file_name: str = 'st.csv'):
@@ -54,7 +69,7 @@ class Student:
             lst = []
             for row in csv_reader:
                 if c == 0:
-                    header = row
+                    # header = row
                     c += 1
                 else:
                     lst.append(row)
@@ -109,9 +124,10 @@ class Student:
         for _, v in self._subject_taught.items():
             lst += v['grade']
         if len(lst) > 0:
-            return f'Average score for all subjects = {(sum(lst) / len(lst)):.2f}'
+            s = sum(lst) / len(lst)
+            return [f'Average score for all subjects = {s:.2f}', s]
         else:
-            return f"Haven't average score!"
+            return [f"Haven't average score!", 0]
 
     def save_student(self, file_name: str):
         with open(f'{file_name}.pkl', 'wb') as pkl_file:
@@ -142,6 +158,9 @@ def main():
     x1.load_student('x1')
     print(x1)
     print(x1.average_rating)
+    print(x == x1)
+    x1.add_grade('матан', 5)
+    print(x1 > x)
 
 
 if __name__ == '__main__':
