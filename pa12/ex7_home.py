@@ -1,4 +1,5 @@
 import csv
+import pickle
 import re
 
 
@@ -33,7 +34,7 @@ class Student:
     patronymic = NameDescriptor()
     last_name = NameDescriptor()
 
-    def __init__(self, first_name: str, patronymic: str, last_name: str):
+    def __init__(self, first_name: str = 'A', patronymic: str = 'A', last_name: str = 'A'):
         self.first_name = first_name
         self.patronymic = patronymic
         self.last_name = last_name
@@ -112,10 +113,19 @@ class Student:
         else:
             return f"Haven't average score!"
 
+    def save_student(self, file_name: str):
+        with open(f'{file_name}.pkl', 'wb') as pkl_file:
+            pickle.dump(self, pkl_file)
+
+    def load_student(self, file_name: str):
+        with open(f'{file_name}.pkl', 'rb') as pkl_file:
+            obj = pickle.load(pkl_file)
+            self.__dict__.update(obj.__dict__)
+
 
 def main():
     x = Student('Vasya', 'Ivanovich', 'Pupkin')
-    print(x._subject_taught)
+
     print(x.patronymic)
     x.add_test('химия', 100)
     x.add_test('химия', 50)
@@ -123,10 +133,15 @@ def main():
     x.add_grade('матан', 5)
     x.add_grade('матан', 3)
     x.add_grade('матан', 4)
-    print(x._subject_taught)
+
     print(x.average_rating)
     print(x.average_grade_score)
     print(x)
+    x.save_student('x1')
+    x1 = Student()
+    x1.load_student('x1')
+    print(x1)
+    print(x1.average_rating)
 
 
 if __name__ == '__main__':
