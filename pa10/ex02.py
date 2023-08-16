@@ -2,6 +2,9 @@ class Rectangle:
     """
     Класс для обработки прямоугольников
     """
+
+    # __slots__ = ['length', 'width']
+
     def __init__(self, *args, **kwargs):
         """
         :param args: принимает 2 параметра ширину и высоту или 1 если это квадрат
