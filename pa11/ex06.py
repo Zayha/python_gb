@@ -1,4 +1,4 @@
-from ex05 import RectanglePro
+from .ex05 import RectanglePro
 
 
 class RectanglePro2(RectanglePro):

@@ -1,4 +1,4 @@
-from ex05_06 import Fish, Ant, Bird
+from .ex05_06 import Fish, Ant, Bird
 
 
 class AnimalsFabric:
