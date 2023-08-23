@@ -3,7 +3,7 @@ import time
 
 from pa12.ex1 import Factorial
 from pa11 import MyString, Matrix
-from home_exc import NegativeValue, CreationTimeChangeError, IncorrectMatrixDimensions
+from .home_exc import NegativeValue, CreationTimeChangeError, IncorrectMatrixDimensions
 
 
 class FactorialWBE(Factorial):

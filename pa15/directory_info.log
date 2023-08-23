@@ -1,0 +1,28 @@
+2023-08-22 12:20:51,201 - INFO - Информация о директории C:\Users\Andre\PycharmProjects\python_gb_2023\pa15:
+
+2023-08-22 12:20:51,201 - INFO - >>>>>> FileInfo(name='arg_test', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:20:51,201 - INFO - >>>>>> FileInfo(name='date_conv', extension='log', is_directory=False, parent_directory='pa15')
+2023-08-22 12:20:51,201 - INFO - >>>>>> FileInfo(name='directory_info', extension='log', is_directory=False, parent_directory='pa15')
+2023-08-22 12:20:51,202 - INFO - >>>>>> FileInfo(name='ex01', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:20:51,202 - INFO - >>>>>> FileInfo(name='ex02_03', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:20:51,202 - INFO - >>>>>> FileInfo(name='ex04', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:20:51,202 - INFO - >>>>>> FileInfo(name='ex05', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:20:51,202 - INFO - >>>>>> FileInfo(name='ex06', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:20:51,202 - INFO - >>>>>> FileInfo(name='func_log', extension='log', is_directory=False, parent_directory='pa15')
+2023-08-22 12:21:06,870 - INFO - Информация о директории C:\Users\Andre\PycharmProjects\python_gb_2023\pa15:
+2023-08-22 12:21:06,871 - INFO - >>>>>> FileInfo(name='arg_test', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:21:06,871 - INFO - >>>>>> FileInfo(name='date_conv', extension='log', is_directory=False, parent_directory='pa15')
+2023-08-22 12:21:06,871 - INFO - >>>>>> FileInfo(name='directory_info', extension='log', is_directory=False, parent_directory='pa15')
+2023-08-22 12:21:06,871 - INFO - >>>>>> FileInfo(name='ex01', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:21:06,871 - INFO - >>>>>> FileInfo(name='ex02_03', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:21:06,871 - INFO - >>>>>> FileInfo(name='ex04', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:21:06,871 - INFO - >>>>>> FileInfo(name='ex05', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:21:06,871 - INFO - >>>>>> FileInfo(name='ex06', extension='py', is_directory=False, parent_directory='pa15')
+2023-08-22 12:21:06,872 - INFO - >>>>>> FileInfo(name='func_log', extension='log', is_directory=False, parent_directory='pa15')
+2023-08-22 12:24:36,100 - INFO - Информация о директории C:\Users\Andre\PycharmProjects\python_gb_2023\les:
+2023-08-22 12:24:36,100 - INFO - >>>>>> FileInfo(name='2', extension=None, is_directory=True, parent_directory='les')
+2023-08-22 12:24:36,101 - INFO - >>>>>> FileInfo(name='3', extension=None, is_directory=True, parent_directory='les')
+2023-08-22 12:24:36,101 - INFO - >>>>>> FileInfo(name='4', extension=None, is_directory=True, parent_directory='les')
+2023-08-22 12:24:36,101 - INFO - >>>>>> FileInfo(name='5', extension=None, is_directory=True, parent_directory='les')
+2023-08-22 12:24:36,101 - INFO - >>>>>> FileInfo(name='6', extension=None, is_directory=True, parent_directory='les')
+2023-08-22 12:24:36,101 - INFO - >>>>>> FileInfo(name='pa7', extension=None, is_directory=True, parent_directory='les')

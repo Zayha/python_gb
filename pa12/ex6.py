@@ -1,4 +1,6 @@
 from pa10 import Rectangle
+
+
 class DescriptorTest:
 
     @classmethod
@@ -22,6 +24,7 @@ class DescriptorTest:
 class NRec(Rectangle):
     length = DescriptorTest()
     width = DescriptorTest()
+
 
 # class Rectangle:
 #     """
